@@ -1,0 +1,24 @@
+.container{
+    width: 50%;
+    height: 500px;
+    border: 2px solid red;
+    /* overflow: visible; */    /*by default*/
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+
+.img1{
+    float: left;
+}
+
+
+.con2{
+    border: 2px solid black;
+    overflow: auto; /*jo image div ni bahar jati re to div no overflow auto kar devo*/
+}
+
+.img2{
+    float:right;
+}

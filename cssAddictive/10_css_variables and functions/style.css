@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#222;
+    --secondary-text-color:#444;
+    --card-background-color:#fff;
+    --background-color:#eee ;
+}
+
+.dark{
+    --primary-text-color:#fff;
+    --secondary-text-color:#ddd;
+    --card-background-color:#333;
+    --background-color:#111 ;
+}
+
+.container{
+    padding: 40px;
+    /* --my-var:cyan; local variable */
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    /* background-color: var(--my-var,green);  jo value namade to green color lai le h1 */
+    color:var(--primary-text-color);
+   
+}
+
+.box{
+    /* --my-var:crimson; local variable */
+    padding: 20px;
+    /* background-color: var(--my-var); */
+    margin-block:20px;
+    border-radius:20px;
+    background-color: var(--card-background-color);
+}
+
+.box h2{
+    margin-bottom: 20px;
+    background-color: var(--my-var); 
+    color: var(--primary-text-color);
+}
+
+p{
+    color: var(--secondary-text-color);
+}
+

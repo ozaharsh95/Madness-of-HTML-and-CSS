@@ -1,0 +1,110 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    flex-direction: column;
+    background-color: tan;
+    gap:0px;
+}
+
+.container{
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    animation: orbit 4s linear infinite;
+    border-radius: 50%;
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid tomato;
+    background-color: tomato;
+    /* animation-name:circle; */
+    animation-name: slide-in;
+    animation-duration: 1s;
+    /* animation-iteration-count: 4; */
+    /* animation-delay: 1s; */
+    /* animation-direction: reverse; */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:  forwards;
+}
+
+@keyframes orbit {
+    from{
+        transfrom:rotate(0);
+
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+@keyframes slide-in {
+    0%{
+        transform:translate(-800px);
+    }
+    100%{
+        transrfrom:translate(200px);
+    }    
+}
+
+
+@keyframes circle {
+    0%,100%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(400px,0);
+    }
+    50%{
+        transform: translate(400px,400px);
+    }
+    75%{
+        transform: translate(0,400px);
+    }
+}
+
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: black;
+    animation: updowns 2s ease infinite alternate;
+}
+.dot:nth-last-child(2){
+    animation-delay: 0.1s;
+}
+
+.dot:nth-last-child(3){
+    animation-delay: 0.2s;
+}
+
+
+.dot:nth-last-child(4){
+    animation-delay: 0.3s;
+}
+
+
+@keyframes updowns {
+    from{
+        transform:translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }    
+}

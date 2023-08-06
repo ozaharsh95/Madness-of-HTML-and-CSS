@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice CSS grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* box1 */
+        
+        .container{
+            height: 900px;
+            width: 1000px;
+            background-color: black;
+            color: #fff;
+            border: 2px solid red;
+            display: grid;
+            /* grid-template-columns:33% 33% 33%; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3,1fr);
+            /* same for row */
+            grid-template-rows: repeat(3,1fr);
+            /* grid-template-rows: 100px auto 50px; */
+        }
+        .item{
+            text-align: center;
+            border: 2px solid #ccc;
+            background-color: rgba(204, 120, 219, 0.726);
+        }
+
+        /* box2 */
+
+        .container2{
+            width: auto;
+            height: 100vh;
+            background-color: crimson;
+            border: 2px solid white;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+
+            gap: /* grid-row-gap     grid-column-gap*/
+            10px 10px;
+        }
+
+        .item2{
+            text-align: center;
+            border:2px solid black;
+            background-color: yellow;
+
+        }
+
+        .i21{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .i25{
+            /* grid-row: 1 / span 2; */
+            grid-row: 3 / span 1;
+        }
+        .i23{
+            grid-row: 2 / span 2;
+        }
+        
+        /* box3 */
+        .container3{
+            width: auto;
+            height: 200vh;
+            background-color: #85DCB6;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items:center ;
+        }
+
+        .item3{
+            background-color: #5CDB95;
+            border: 2px solid #05386B;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .i221{
+            align-self: end;
+        }
+
+        .i224{
+            justify-self: end;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>GRID | grid-template-columns | grid-template-rows</h2>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+        <div class="item">item9</div>
+    </div>
+    <h2>grid-column-start | grid-column-end | grid-row-start | grid-row-end | gap</h2>
+    <div class="container2">
+        <div class="item2 i21">item1</div>
+        <div class="item2 i22">item2</div>
+        <div class="item2 i23">item3</div>
+        <div class="item2 i24">item4</div>
+        <div class="item2 i25">item5</div>
+        
+    </div>
+    <h2>justify-items | align-items | justify-self | align-self</h2>
+    <div class="container3">
+        <div class="item3 i221">item1</div>
+        <div class="item3 i222">item2</div>
+        <div class="item3 i223">item3</div>
+        <div class="item3 i224">item4</div>
+        <div class="item3 i225">item5</div>
+        <div class="item3 i225">item6</div>
+        <div class="item3 i225">item7</div>
+        <div class="item3 i225">item8</div>
+        
+    </div>
+</body>
+</html>

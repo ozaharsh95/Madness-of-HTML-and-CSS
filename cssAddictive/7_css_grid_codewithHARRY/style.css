@@ -1,0 +1,40 @@
+.container{
+    background-color: brown;
+    height: 900px;
+    width: 900px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);   /* or 1fr 1fr 1fr*/
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    justify-items:start;  /*items ne set kare horizontal way ma perticular cell ma .
+                            ->aa use karata pehala item ne width apavai jaruri chhe.                    
+        */
+
+    /* align-items: center; items ne vertically set karava mate vapray chhe */
+}
+
+.item{
+    background-color: lightcoral;
+    height: 122px;
+    width: 122px;
+    text-align: center;
+    font-weight: 900;
+    font-size: larger;
+    
+}
+
+.item1{
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+
+    /* or */
+
+    /* grid-column: 1 / span 3; */
+    align-items: end;
+}
+
+
+.item2{
+    justify-self: center; /*perticular koi cell ma element ne start,end,center karava mate use thay*/
+}

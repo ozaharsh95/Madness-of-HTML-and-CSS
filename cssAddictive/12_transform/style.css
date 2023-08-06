@@ -1,0 +1,52 @@
+.container{
+    width:600px;
+    height: 600px;
+    background-color: burlywood;
+    margin:80px auto;
+}
+
+.box{
+    width:200px;
+    height: 200px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(1.5); */
+    /*
+        scale ma je number hoy etala ganu size vadhe
+
+        scale(n)  -> x and y direction ma scale thay chhe
+
+        scale(x,y) -> x and y direction ma alag alag mate
+
+        scaleX(n)
+        scaleY(n)
+        scaleZ(n)
+    
+    */
+
+    /* skew */
+     /* transform: skew(10deg); */
+    /* transform: skew(0deg,10deg); */
+    /* transform: skew(10deg,0deg); */
+
+
+    /* translate */
+
+    /* transform: translate(20px,40px); */
+    /* transform:translate(50%,50%); */
+
+
+    /* rotate */
+
+    /* transform: rotate(45deg); */
+
+    transition: 0.5s ease;
+    transform-origin: top-left;
+}
+
+
+.box:hover{
+    transform: rotate(45deg);
+}

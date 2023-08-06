@@ -1,0 +1,53 @@
+.box{
+    margin:30px auto;
+    width:200px;
+    height: 200px;
+    background-color: teal;
+    transition: 0.4s;
+    /* transition-property: background-color,border-radius; */
+    transition-property: background-color,border-radius,transform;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in;
+}   
+
+.box:hover{
+    background-color: burlywood;
+    border-radius: 50%;
+    transform:rotate(18deg);
+}
+
+/* transition-delay
+    transition-duration
+    transition-property
+    transition-timing-function
+
+     by default--> ease (slow start,then fast,then slow)
+
+     linear-> same speed start and end
+
+     ease-in-> slow start
+
+     ease-out-> slow end
+
+     ease-in-out-> slow start and end
+
+*/
+
+ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+
+li{
+    font-size:2rem;
+    padding: 20px 10px;
+    transition:0.3s ease-in;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    transform:translateY(-10px);
+}

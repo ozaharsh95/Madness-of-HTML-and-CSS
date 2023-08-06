@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes and selector</title>
+    <style>
+        .btn:link{
+            color:yellow;
+            padding: 20px;
+        }
+        .btn:visited{
+            color: red;
+        }
+        .btn:hover{
+            color: green;
+
+        }
+        .btn:active{
+            color:black;
+            background-color: #ccc;
+            border:2px solid gold;
+        }
+
+        h3::before{
+            content: " selected kari batay ";
+        }
+        h3::after{
+            content: "  na thay loda";
+        }
+
+        ::selection{
+            color: greenyellow;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <h3>The Hero Warrior'(>_<)'</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ex esse quae in ea maiores numquam impedit porro aut asperiores libero possimus natus voluptatum optio saepe, nobis tempore sed quia.
+            Quibusdam natus quaerat et? Aspernatur, eos molestiae. Consequatur, cum tenetur. Deleniti fuga hic dolores perferendis quae libero tempore tempora molestiae ex harum doloribus doloremque, alias vero sit ab voluptate platenetur incidunt est fugiat aliquid inventore dignissimos pariatur optio, ad quae. Placeat, corporis corrupti? Sed error id dolore cumque! Placeat!
+        </p>
+
+        <a href="#" class="btn">Press ME</a>
+
+
+    </main>
+</body>
+</html>

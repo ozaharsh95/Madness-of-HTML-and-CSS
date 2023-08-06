@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#000;
+    --secondary-color:#333;
+    --background-color:#fff;
+    --card-background:#ccc;
+}
+
+.black{
+    --primary-color:#fff;
+    --secondary-color:#ccc;
+    --background-color:#000;
+    --card-background:#333;
+}
+
+body{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2{
+    color:var(--primary-color)
+}
+
+p{
+    color: var(--secondary-color);
+}
+.dabbo{
+    width:50%;
+    height: 800px;
+}
+
+h1{
+    margin:20px;
+}
+.nano{
+    background-color: var(--card-background);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="f();" id="myBtn" value="OFF">Dark</button>
+        <h1>Nature Park</h1>
+        <div class="box">
+            <h2>Waterpark</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, veniam!</p>
+        </div>
+        <div class="box">
+            <h2>Jungle</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, veniam!</p>
+        </div>
+        <div class="box">
+            <h2>Desert</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, veniam!</p>
+        </div>
+    </div>
+    <script>
+        function f(){
+            var t = document.getElementById("myBtn");
+            if(t.value=="ON"){
+                t.value="OFF";
+                document.body.classList.remove('dark');
+            }
+            else if(t.value=="OFF"){
+                t.value="ON";
+                document.body.classList.add('dark');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+nav{
+    background-color: blueviolet;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    z-index: 1;
+}
+
+main{
+    border: 2px solid yellow;
+    background-color: snow;
+    width: 50%;
+    position: relative;
+    top:100px;
+    left:200px;
+    font-size: 35px;
+}
+
+
+.right-container{
+    background-color: pink;
+    width: 30%;
+    position: absolute;
+    height: 200vh;
+    top:100px;
+    left:950px;
+    border: 2px solid red;
+}
+
+.contactkachild{
+    background-color: yellow;
+    height: 50vh;
+    width: auto;
+    position: sticky;
+    top:0;
+}
+
+footer{
+    background-color: blueviolet;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    margin-top: 100px;
+}
+
+.contact{
+    background-color: greenyellow;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}

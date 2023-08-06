@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h1>oythi bharajo badha</h1>
+        <div>
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="years">How many years?</label>
+            <br>
+            <input type="number" id="years" name="years" min="0" max="10" step="2">
+        </div>
+        <div>
+            <label for="rate">Give us Rating...</label>
+            <br>
+            0
+            <input type="range" id="rate" name="rate" min="0" max="10" step="2">
+            10
+        </div>
+        <div>
+            <p>What do you mean??</p>
+
+            <label for="banana">Banana</label>
+            <input type="checkbox" id="banana" name="banana" value="banana">
+
+            <label for="apple">Apple</label>
+            <input type="checkbox" id="apple" name="apple" value="apple">
+        </div>
+        <div>
+            <p>How are you?</p>
+
+            <label for="fine">Fine</label>
+            <input type="radio" id="fine" name="fine" value="fine">
+
+            <label for="fine">Very Good</label>
+            <input type="radio" id="finee" name="finee" value="finee">
+        </div>
+        <div>
+            <label for="food">What's your fav food??</label>
+
+            <select name="food" id="food">
+                <option value="dabeli">Dabeli</option>
+                <option value="vadapav">Vadapav</option>
+                <option value="puff">Puff</option>
+            </select>
+        </div>
+        <div>
+            <label for="city">Ideal city to live??</label>
+            <input type="text" id="city" name="city" list="cities">
+            
+            <datalist id="cities">
+                <option value="Tokyo"></option>
+                <option value="Delhi"></option>
+                <option value="Delgum"></option>
+                <option value="Tarapur"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="fb">fb aap chal :)</label>
+            <br>
+            <textarea name="fb" id="fb" cols="30" rows="10" minlength="5"></textarea>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

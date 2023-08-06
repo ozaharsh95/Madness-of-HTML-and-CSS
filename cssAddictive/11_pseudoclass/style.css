@@ -1,0 +1,105 @@
+/* pseudo class 
+
+    is used to define a special state of an element
+
+    :visited
+    :link
+    :hover
+    :active
+    :first-child
+    :last-child
+    :nth-child()
+*/
+
+
+
+
+
+body{
+    padding:40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn:link{
+    color:yellow;
+    padding: 10px;
+}
+
+.btn:visited{
+    color:green;
+}
+
+.btn:hover{
+    color:red;
+    background-color: #f0f8ff ;
+
+}
+
+.btn:active{
+    color:black;
+    border:2px solid blue;
+    background-color: white;
+
+}
+
+/*
+
+ul li:first-child{
+    background-color: blueviolet;
+}
+
+ul li:last-child{
+    background-color: aqua;
+}
+
+*/
+
+
+/* nth child */
+
+ul li:nth-child(4){
+    background-color: green;
+}
+
+ul li:nth-child(odd){
+    background-color: red;
+}
+
+/* 
+    psuedo elements
+
+    is used to style specified parts of an element
+
+
+    ::first-letter
+    ::first-line
+    ::before
+    ::after
+
+*/
+
+h2::first-letter{
+    /* color:blue;
+    background-color: green; */
+    font-size: 2.5rem;
+}
+
+::selection{
+    color:greenyellow;
+    background-color: black;
+}
+
+p::first-line{
+    background-color: burlywood;
+}
+
+
+/* before after */
+
+h3::before{
+    content: "select kari na sakay  ";
+}
+
+h3::after{
+    content:"  *****";
+}

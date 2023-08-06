@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ccc;
+            color: #222;
+
+        }
+        .form-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            margin: 50px;
+            background-color: #fff;
+            border: 2px solid gray;
+            border-radius:5px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+       
+        
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <h3>FILLED OUT MY FORM RIGHT NOW..!</h3>
+            <div>
+                <label for="hobby">What is your hobby???</label>
+                <br>
+                <input type="text" id="hobby" name="hobby">
+            </div>
+            <div>
+
+                <label for="password">Enter your Password</label>
+                <br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="years">How many years of experiance ??</label>
+                <br>
+                <input type="number" id="years" name="years" min="0" step="1">
+            </div>
+            <div>
+                <label for="rate">Rate yourself..!</label>
+                <br>
+                0
+                <input type="range" id="rate" name="rate" min="0" max="10" step="1">
+                10
+            </div>
+            <div>
+                <p>What do you want?</p>
+                <label for="banana">banana</label>
+                <input type="checkbox" id="banana" name="banan" value="banana">
+                <label for="apple">apple</label>
+                <input type="checkbox" id="apple" name="apple" value="apple">
+                <label for="Orange">Orange</label>
+                <input type="checkbox" id="Orange" name="Orange" value="Orange">
+            </div>
+            <div>
+                <p>How are you?</p>
+                <label for="fine">fine</label>
+                <input type="radio" id="fine" name="fine" value="fine">
+                <label for="Very good">Very good</label>
+                <input type="radio" id="Very good" name="Very good" value="Very good">
+
+            </div>
+            <div>
+                <label for="food">what's your fav food? </label>
+                <select id="food" name="food">
+                    <option value="Dabeli">Dabeli</option>
+                    <option value="Vadapav">Vadapav</option>
+                    <option value="Puff">Puff</option>
+                </select>
+            </div>
+            <div>
+                <label for="city">Ideal city to visit?</label>
+                <input type="text" id="city" name="city" list="cities">
+                <datalist id="cities">
+                    <option value="Tokyo"></option>
+                    <option value="Delhi"></option>
+                    <option value="Gandhinagar"></option>
+                    <option value="vavol"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="feedback">Feedback</label>
+                <br>
+                <textarea id="feedback" name="feedback" rows="10" cols="30" minlength="5" ></textarea>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

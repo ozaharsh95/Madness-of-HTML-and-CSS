@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./practice_css.css">
+</head>
+<body>
+    <button onclick="f()" value="OFF" class="byn">Mode</button>
+    <div class="dabbo">
+        <h1>My Heading...!!!</h1>
+        <div class="nano">
+            <h2>Jamaku</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, itaque?</p>
+        </div>
+        <div class="nano">
+            <h2>Jamaku</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, itaque?</p>
+        </div>
+        <div class="nano">
+            <h2>Jamaku</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, itaque?</p>
+        </div>
+    </div>
+    <script>
+        function f(){
+            const body=document.body;
+            const btn=document.querySelector('.byn');
+            if(btn.value==='OFF'){
+                btn.value='ON';
+                body.classList.add('black');
+            }else{
+                btn.value='OFF';
+                body.classList.remove('black');
+
+            }
+        }
+    </script>
+</body>
+</html>

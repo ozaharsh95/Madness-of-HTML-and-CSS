@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Transition </title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            background-color: teal;
+            color: black;
+            margin:50px auto;
+            transition: 0.5s;
+            transition-property:background-color,border-radius,transform;
+            transition-delay:0.1s;
+            transition-timing-function: ease-out;
+        }
+        .box:hover{
+            background-color: burlywood;
+            border-radius: 50%;
+            transform: rotate(18deg);
+        }
+
+        ul{
+            display: flex;
+            margin-top:50px;
+            gap:20px;
+            list-style: none;
+        }
+
+        li{
+            font-size:2rem;
+            padding: 20px 30px;
+            transition: 0.3s ease-in;
+        }
+
+        li:hover{
+            cursor: pointer;
+            background-color: #000;
+            color:#fff;
+            transform:translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="second">
+        <ul>
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Login</li>
+        </ul>
+    </div>
+</body>
+</html>
