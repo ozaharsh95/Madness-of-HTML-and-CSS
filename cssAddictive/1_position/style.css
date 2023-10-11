@@ -1,17 +1,22 @@
 .container{
     width: 300px;
     height: 900px;
-    background-color: gainsboro;
+    background-color: gainsboro ;
     margin:100px;
-
+    border:2px solid purple;
 }
-
+html{
+    border:2px solid brown;
+}
+body{
+    border:2px solid blue;
+}
 .box{
     width: 100px;
     height: 100px;
 }
 
-/* relative ka relative parent hota hai */
+/* relative e potani old position na respect ma change thay */
 .red{
     position: relative;
     background-color: red;
@@ -19,20 +24,34 @@
     left: 100px;
 }
 
-/* absoulue ka relative html hota hai */
+/* absolute hoy e potana parent na relative hoy */
+/* element is removed from normal document flow */
+/* je parent hoy eni position static (default) sivay kai biji hovi joie  */
+/* jo koi evo parent na made keje jeni position static sivay hoy to <html> na respect ma position le */
+
+
+/* jab absolute ka koi nahi hota tab <html> tag hota */
 .green{
     background-color: green;
     position: absolute;
-    right:0;
-    bottom:0;
+    /* right:0;
+    bottom:0; */
+    right:5px;
 }
 
+
+/* fixed == absolute */
+/* always relative to <html> */
+/* position don't change by scrolling */
 .blue{
     background-color: blue;
     position: fixed;
-    top:100px;
+    top:50px;
     left:150px;
 }
+
+/* its a absolute untill cond is not fullfilled */
+/* when condition is fullfilled its behave like fixed */
 
 .purple{
     background-color: purple;
